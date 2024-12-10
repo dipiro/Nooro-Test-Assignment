@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C6B7DC52D07926C0002A6A0 /* PlacesScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DC42D07926C0002A6A0 /* PlacesScreenModel.swift */; };
+		8C6B7DC82D0792BA0002A6A0 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DC72D0792BA0002A6A0 /* Defaults.swift */; };
+		8C6B7DCB2D0792F20002A6A0 /* PlacesScreenModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DCA2D0792F20002A6A0 /* PlacesScreenModelProtocol.swift */; };
+		8C6B7DCE2D0793070002A6A0 /* PlacesScreenStateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DCD2D0793070002A6A0 /* PlacesScreenStateType.swift */; };
+		8C6B7DD52D0797F20002A6A0 /* FontConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DD42D0797F20002A6A0 /* FontConfig.swift */; };
+		8C6B7DD82D0798030002A6A0 /* FontStyleTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DD72D0798030002A6A0 /* FontStyleTypes.swift */; };
+		8C6B7DDB2D0798230002A6A0 /* TextStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6B7DDA2D0798230002A6A0 /* TextStyleModifier.swift */; };
+		8C6B7DE02D07B0BB0002A6A0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B7DDF2D07B0BB0002A6A0 /* Poppins-Bold.ttf */; };
+		8C6B7DE32D07B0D00002A6A0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B7DE12D07B0D00002A6A0 /* Poppins-Regular.ttf */; };
+		8C6B7DE42D07B0D00002A6A0 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B7DE22D07B0D00002A6A0 /* Poppins-SemiBold.ttf */; };
+		8C6B7DE92D07B1B70002A6A0 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C6B7DE82D07B1B70002A6A0 /* Poppins-Medium.ttf */; };
+		8CC0B89B2D065ADD004CF111 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8912D065ADD004CF111 /* AppConstants.swift */; };
+		8CC0B89C2D065ADD004CF111 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8942D065ADD004CF111 /* SearchTextField.swift */; };
+		8CC0B89D2D065ADD004CF111 /* Nooro_Test_AssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8982D065ADD004CF111 /* Nooro_Test_AssignmentApp.swift */; };
+		8CC0B89E2D065ADD004CF111 /* PlacesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8992D065ADD004CF111 /* PlacesScreen.swift */; };
+		8CC0B89F2D065ADD004CF111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0B88E2D065ADD004CF111 /* Preview Assets.xcassets */; };
+		8CC0B8A02D065ADD004CF111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC0B8972D065ADD004CF111 /* Assets.xcassets */; };
+		8CC0B8A42D065B09004CF111 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8A32D065B09004CF111 /* PlaceCell.swift */; };
+		8CC0B8A82D065CCB004CF111 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8A72D065CCB004CF111 /* Networkable.swift */; };
+		8CC0B8AB2D065D45004CF111 /* UserEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8AA2D065D45004CF111 /* UserEndpoints.swift */; };
+		8CC0B8AD2D065E01004CF111 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8AC2D065E01004CF111 /* Network.swift */; };
+		8CC0B8B02D065F74004CF111 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8AF2D065F74004CF111 /* WeatherModel.swift */; };
+		8CC0B8B22D0660DE004CF111 /* WeatherCurrentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8B12D0660DE004CF111 /* WeatherCurrentModel.swift */; };
+		8CC0B8B42D0660FD004CF111 /* WeatherConditionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8B32D0660FD004CF111 /* WeatherConditionModel.swift */; };
+		8CC0B8B62D066107004CF111 /* WeatherLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8B52D066107004CF111 /* WeatherLocationModel.swift */; };
+		8CC0B8B92D06616B004CF111 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8B82D06616B004CF111 /* Preview.swift */; };
+		8CC0B8BC2D066A96004CF111 /* DetailWeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8BB2D066A96004CF111 /* DetailWeatherScreen.swift */; };
+		8CC0B8C32D066DF2004CF111 /* DetailWeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8C22D066DF2004CF111 /* DetailWeatherInfo.swift */; };
+		8CC0B8CB2D072FCB004CF111 /* PlacesNoCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC0B8CA2D072FCB004CF111 /* PlacesNoCity.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C6B7DF22D07B2B80002A6A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C86786C2D06247300532BC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C8678732D06247300532BC0;
+			remoteInfo = "Nooro-Test-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C6B7DC42D07926C0002A6A0 /* PlacesScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScreenModel.swift; sourceTree = "<group>"; };
+		8C6B7DC72D0792BA0002A6A0 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		8C6B7DCA2D0792F20002A6A0 /* PlacesScreenModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScreenModelProtocol.swift; sourceTree = "<group>"; };
+		8C6B7DCD2D0793070002A6A0 /* PlacesScreenStateType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScreenStateType.swift; sourceTree = "<group>"; };
+		8C6B7DD42D0797F20002A6A0 /* FontConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConfig.swift; sourceTree = "<group>"; };
+		8C6B7DD72D0798030002A6A0 /* FontStyleTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyleTypes.swift; sourceTree = "<group>"; };
+		8C6B7DDA2D0798230002A6A0 /* TextStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleModifier.swift; sourceTree = "<group>"; };
+		8C6B7DDF2D07B0BB0002A6A0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		8C6B7DE12D07B0D00002A6A0 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		8C6B7DE22D07B0D00002A6A0 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		8C6B7DE52D07B0F00002A6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C6B7DE82D07B1B70002A6A0 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		8C6B7DEE2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nooro-Test-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C8678742D06247300532BC0 /* Nooro-Test-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nooro-Test-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC0B88E2D065ADD004CF111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CC0B8912D065ADD004CF111 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8CC0B8942D065ADD004CF111 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		8CC0B8972D065ADD004CF111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CC0B8982D065ADD004CF111 /* Nooro_Test_AssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nooro_Test_AssignmentApp.swift; sourceTree = "<group>"; };
+		8CC0B8992D065ADD004CF111 /* PlacesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesScreen.swift; sourceTree = "<group>"; };
+		8CC0B8A32D065B09004CF111 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		8CC0B8A72D065CCB004CF111 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		8CC0B8AA2D065D45004CF111 /* UserEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoints.swift; sourceTree = "<group>"; };
+		8CC0B8AC2D065E01004CF111 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		8CC0B8AF2D065F74004CF111 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		8CC0B8B12D0660DE004CF111 /* WeatherCurrentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCurrentModel.swift; sourceTree = "<group>"; };
+		8CC0B8B32D0660FD004CF111 /* WeatherConditionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditionModel.swift; sourceTree = "<group>"; };
+		8CC0B8B52D066107004CF111 /* WeatherLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherLocationModel.swift; sourceTree = "<group>"; };
+		8CC0B8B82D06616B004CF111 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		8CC0B8BB2D066A96004CF111 /* DetailWeatherScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherScreen.swift; sourceTree = "<group>"; };
+		8CC0B8C22D066DF2004CF111 /* DetailWeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherInfo.swift; sourceTree = "<group>"; };
+		8CC0B8CA2D072FCB004CF111 /* PlacesNoCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesNoCity.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8C6B7DEF2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Nooro-Test-AssignmentTests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C6B7DEB2D07B2B80002A6A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C8678712D06247300532BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C6B7DC62D0792B00002A6A0 /* UserDefatults */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DC72D0792BA0002A6A0 /* Defaults.swift */,
+			);
+			path = UserDefatults;
+			sourceTree = "<group>";
+		};
+		8C6B7DC92D0792E90002A6A0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DCA2D0792F20002A6A0 /* PlacesScreenModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8C6B7DCC2D0792F80002A6A0 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DCD2D0793070002A6A0 /* PlacesScreenStateType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		8C6B7DD12D0797D30002A6A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DD22D0797DB0002A6A0 /* Font */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8C6B7DD22D0797DB0002A6A0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DD62D0797FC0002A6A0 /* Type */,
+				8C6B7DD32D0797ED0002A6A0 /* Config */,
+				8C6B7DD92D0798140002A6A0 /* ViewModifier */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		8C6B7DD32D0797ED0002A6A0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DD42D0797F20002A6A0 /* FontConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8C6B7DD62D0797FC0002A6A0 /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DD72D0798030002A6A0 /* FontStyleTypes.swift */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		8C6B7DD92D0798140002A6A0 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DDA2D0798230002A6A0 /* TextStyleModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		8C6B7DDE2D07B0AD0002A6A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DDF2D07B0BB0002A6A0 /* Poppins-Bold.ttf */,
+				8C6B7DE12D07B0D00002A6A0 /* Poppins-Regular.ttf */,
+				8C6B7DE22D07B0D00002A6A0 /* Poppins-SemiBold.ttf */,
+				8C6B7DE82D07B1B70002A6A0 /* Poppins-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8C86786B2D06247300532BC0 = {
+			isa = PBXGroup;
+			children = (
+				8CC0B89A2D065ADD004CF111 /* Nooro-Test-Assignment */,
+				8C6B7DEF2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests */,
+				8C8678752D06247300532BC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C8678752D06247300532BC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C8678742D06247300532BC0 /* Nooro-Test-Assignment.app */,
+				8C6B7DEE2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CC0B88F2D065ADD004CF111 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B88E2D065ADD004CF111 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CC0B8902D065ADD004CF111 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8BD2D066ABF004CF111 /* DetailScreen */,
+				8CC0B8A12D065AE0004CF111 /* PlacesScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8CC0B8922D065ADD004CF111 /* AppConstants */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8912D065ADD004CF111 /* AppConstants.swift */,
+			);
+			path = AppConstants;
+			sourceTree = "<group>";
+		};
+		8CC0B8932D065ADD004CF111 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8922D065ADD004CF111 /* AppConstants */,
+				8C6B7DC62D0792B00002A6A0 /* UserDefatults */,
+				8CC0B8A52D065CB3004CF111 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8CC0B8952D065ADD004CF111 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8942D065ADD004CF111 /* SearchTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		8CC0B8962D065ADD004CF111 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8952D065ADD004CF111 /* TextField */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8CC0B89A2D065ADD004CF111 /* Nooro-Test-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DE52D07B0F00002A6A0 /* Info.plist */,
+				8CC0B8B72D06615F004CF111 /* Supporting */,
+				8C6B7DD12D0797D30002A6A0 /* Extensions */,
+				8CC0B8962D065ADD004CF111 /* UI */,
+				8CC0B8932D065ADD004CF111 /* Services */,
+				8CC0B8902D065ADD004CF111 /* Screens */,
+				8CC0B8982D065ADD004CF111 /* Nooro_Test_AssignmentApp.swift */,
+			);
+			path = "Nooro-Test-Assignment";
+			sourceTree = "<group>";
+		};
+		8CC0B8A12D065AE0004CF111 /* PlacesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C6B7DCC2D0792F80002A6A0 /* Enum */,
+				8C6B7DC92D0792E90002A6A0 /* Protocols */,
+				8CC0B8A22D065AEB004CF111 /* Subviews */,
+				8CC0B8992D065ADD004CF111 /* PlacesScreen.swift */,
+				8C6B7DC42D07926C0002A6A0 /* PlacesScreenModel.swift */,
+			);
+			path = PlacesScreen;
+			sourceTree = "<group>";
+		};
+		8CC0B8A22D065AEB004CF111 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8A32D065B09004CF111 /* PlaceCell.swift */,
+				8CC0B8CA2D072FCB004CF111 /* PlacesNoCity.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		8CC0B8A52D065CB3004CF111 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8A92D065D35004CF111 /* Enums */,
+				8CC0B8A62D065CBE004CF111 /* Protocol */,
+				8CC0B8AE2D065F16004CF111 /* RequestModels */,
+				8CC0B8AC2D065E01004CF111 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8CC0B8A62D065CBE004CF111 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8A72D065CCB004CF111 /* Networkable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		8CC0B8A92D065D35004CF111 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8AA2D065D45004CF111 /* UserEndpoints.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8CC0B8AE2D065F16004CF111 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8B52D066107004CF111 /* WeatherLocationModel.swift */,
+				8CC0B8AF2D065F74004CF111 /* WeatherModel.swift */,
+				8CC0B8B12D0660DE004CF111 /* WeatherCurrentModel.swift */,
+				8CC0B8B32D0660FD004CF111 /* WeatherConditionModel.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		8CC0B8B72D06615F004CF111 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B88F2D065ADD004CF111 /* Preview Content */,
+				8C6B7DDE2D07B0AD0002A6A0 /* Fonts */,
+				8CC0B8B82D06616B004CF111 /* Preview.swift */,
+				8CC0B8972D065ADD004CF111 /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		8CC0B8BD2D066ABF004CF111 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8C12D066DDA004CF111 /* Subview */,
+				8CC0B8BB2D066A96004CF111 /* DetailWeatherScreen.swift */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		8CC0B8C12D066DDA004CF111 /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+				8CC0B8C22D066DF2004CF111 /* DetailWeatherInfo.swift */,
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C6B7DED2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C6B7DF42D07B2B80002A6A0 /* Build configuration list for PBXNativeTarget "Nooro-Test-AssignmentTests" */;
+			buildPhases = (
+				8C6B7DEA2D07B2B80002A6A0 /* Sources */,
+				8C6B7DEB2D07B2B80002A6A0 /* Frameworks */,
+				8C6B7DEC2D07B2B80002A6A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C6B7DF32D07B2B80002A6A0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8C6B7DEF2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests */,
+			);
+			name = "Nooro-Test-AssignmentTests";
+			packageProductDependencies = (
+			);
+			productName = "Nooro-Test-AssignmentTests";
+			productReference = 8C6B7DEE2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C8678732D06247300532BC0 /* Nooro-Test-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C8678822D06247600532BC0 /* Build configuration list for PBXNativeTarget "Nooro-Test-Assignment" */;
+			buildPhases = (
+				8C8678702D06247300532BC0 /* Sources */,
+				8C8678712D06247300532BC0 /* Frameworks */,
+				8C8678722D06247300532BC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Nooro-Test-Assignment";
+			packageProductDependencies = (
+			);
+			productName = "Nooro-Test-Assignment";
+			productReference = 8C8678742D06247300532BC0 /* Nooro-Test-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C86786C2D06247300532BC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					8C6B7DED2D07B2B80002A6A0 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 8C8678732D06247300532BC0;
+					};
+					8C8678732D06247300532BC0 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C86786F2D06247300532BC0 /* Build configuration list for PBXProject "Nooro-Test-Assignment" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C86786B2D06247300532BC0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8C8678752D06247300532BC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C8678732D06247300532BC0 /* Nooro-Test-Assignment */,
+				8C6B7DED2D07B2B80002A6A0 /* Nooro-Test-AssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C6B7DEC2D07B2B80002A6A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C8678722D06247300532BC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C6B7DE32D07B0D00002A6A0 /* Poppins-Regular.ttf in Resources */,
+				8C6B7DE42D07B0D00002A6A0 /* Poppins-SemiBold.ttf in Resources */,
+				8CC0B89F2D065ADD004CF111 /* Preview Assets.xcassets in Resources */,
+				8C6B7DE92D07B1B70002A6A0 /* Poppins-Medium.ttf in Resources */,
+				8C6B7DE02D07B0BB0002A6A0 /* Poppins-Bold.ttf in Resources */,
+				8CC0B8A02D065ADD004CF111 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C6B7DEA2D07B2B80002A6A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C8678702D06247300532BC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC0B89B2D065ADD004CF111 /* AppConstants.swift in Sources */,
+				8C6B7DC52D07926C0002A6A0 /* PlacesScreenModel.swift in Sources */,
+				8C6B7DD52D0797F20002A6A0 /* FontConfig.swift in Sources */,
+				8CC0B8A42D065B09004CF111 /* PlaceCell.swift in Sources */,
+				8C6B7DD82D0798030002A6A0 /* FontStyleTypes.swift in Sources */,
+				8CC0B8B42D0660FD004CF111 /* WeatherConditionModel.swift in Sources */,
+				8CC0B8AD2D065E01004CF111 /* Network.swift in Sources */,
+				8CC0B89C2D065ADD004CF111 /* SearchTextField.swift in Sources */,
+				8CC0B8C32D066DF2004CF111 /* DetailWeatherInfo.swift in Sources */,
+				8CC0B8BC2D066A96004CF111 /* DetailWeatherScreen.swift in Sources */,
+				8CC0B8B02D065F74004CF111 /* WeatherModel.swift in Sources */,
+				8C6B7DDB2D0798230002A6A0 /* TextStyleModifier.swift in Sources */,
+				8C6B7DCE2D0793070002A6A0 /* PlacesScreenStateType.swift in Sources */,
+				8C6B7DC82D0792BA0002A6A0 /* Defaults.swift in Sources */,
+				8C6B7DCB2D0792F20002A6A0 /* PlacesScreenModelProtocol.swift in Sources */,
+				8CC0B8AB2D065D45004CF111 /* UserEndpoints.swift in Sources */,
+				8CC0B8B92D06616B004CF111 /* Preview.swift in Sources */,
+				8CC0B8B62D066107004CF111 /* WeatherLocationModel.swift in Sources */,
+				8CC0B8CB2D072FCB004CF111 /* PlacesNoCity.swift in Sources */,
+				8CC0B89D2D065ADD004CF111 /* Nooro_Test_AssignmentApp.swift in Sources */,
+				8CC0B8A82D065CCB004CF111 /* Networkable.swift in Sources */,
+				8CC0B8B22D0660DE004CF111 /* WeatherCurrentModel.swift in Sources */,
+				8CC0B89E2D065ADD004CF111 /* PlacesScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C6B7DF32D07B2B80002A6A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C8678732D06247300532BC0 /* Nooro-Test-Assignment */;
+			targetProxy = 8C6B7DF22D07B2B80002A6A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C6B7DF52D07B2B80002A6A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MPJF6SLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.t.Nooro-Test-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nooro-Test-Assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nooro-Test-Assignment";
+			};
+			name = Debug;
+		};
+		8C6B7DF62D07B2B80002A6A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45MPJF6SLJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.t.Nooro-Test-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nooro-Test-Assignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nooro-Test-Assignment";
+			};
+			name = Release;
+		};
+		8C8678802D06247600532BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C8678812D06247600532BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C8678832D06247600532BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nooro-Test-Assignment/Supporting/Preview Content\"";
+				DEVELOPMENT_TEAM = 45MPJF6SLJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nooro-Test-Assignment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.t.Nooro-Test-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C8678842D06247600532BC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Nooro-Test-Assignment/Supporting/Preview Content\"";
+				DEVELOPMENT_TEAM = 45MPJF6SLJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nooro-Test-Assignment/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.t.t.Nooro-Test-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C6B7DF42D07B2B80002A6A0 /* Build configuration list for PBXNativeTarget "Nooro-Test-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C6B7DF52D07B2B80002A6A0 /* Debug */,
+				8C6B7DF62D07B2B80002A6A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C86786F2D06247300532BC0 /* Build configuration list for PBXProject "Nooro-Test-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C8678802D06247600532BC0 /* Debug */,
+				8C8678812D06247600532BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C8678822D06247600532BC0 /* Build configuration list for PBXNativeTarget "Nooro-Test-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C8678832D06247600532BC0 /* Debug */,
+				8C8678842D06247600532BC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C86786C2D06247300532BC0 /* Project object */;
+}
